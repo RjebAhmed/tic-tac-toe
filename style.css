@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(90deg, rgb(109, 189, 236), rgb(212, 144, 198));
+}
+.xoContainer {
+  display: grid;
+  margin: auto;
+  margin-top: 10%;
+
+  grid-template-columns: 33% 33% 33%;
+  gap: 0px;
+  width: 300px;
+  height: 300px;
+}
+.xoContainer button {
+  background-color: rgba(124, 119, 155, 0.644);
+  border: solid 1px rgb(104, 95, 155);
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+}
+.xoContainer button img {
+  height: 40px;
+}
+.hor {
+  background-color: rgba(0, 0, 0, 0.856);
+  width: 250px;
+  height: 10px;
+  position: absolute;
+  left: 552px;
+  bottom: 470px;
+
+  display: none;
+}
+.ver {
+  background-color: rgba(0, 0, 0, 0.856);
+  width: 10px;
+  height: 250px;
+  position: absolute;
+  left: 572px;
+  bottom: 245px;
+  display: none;
+}
+.diag {
+  background-color: rgba(0, 0, 0, 0.856);
+  width: 10px;
+  height: 350px;
+  position: absolute;
+  left: 675px;
+  bottom: 203px;
+  transform: rotate(45deg);
+  display: none;
+}
+.controlContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5%;
+}
+.controlContainer button {
+  width: 120px;
+  padding: 12px;
+  margin: 0 2px;
+  background-color: rgba(107, 99, 153, 0.747);
+  border: solid 1px rgb(104, 95, 155);
+  cursor: pointer;
+}
+.controlContainer button:hover {
+  background-color: rgba(107, 99, 153, 0.411);
+}
+.result {
+  font-family: Anton;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  width: 70%;
+  height: 130px;
+  background-color: rgba(199, 228, 74, 0.548);
+  position: relative;
+  bottom: 280px;
+  margin: 0 auto;
+  border: solid 2px rgb(104, 95, 155);
+  display: none;
+}
+button:focus{
+  outline: none;
+}
